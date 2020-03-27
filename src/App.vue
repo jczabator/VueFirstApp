@@ -2,18 +2,22 @@
   <div id="app">    
     <HelloWorld msg="Hello Vue!"/>    
     <CurrentDate message="You loaded this page on "/>
+    <br>
+    <Conditional v-bind:seen="true" />
   </div>     
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import CurrentDate from './components/CurrentDate.vue'
+import Conditional from './components/Conditional.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    CurrentDate
+    CurrentDate,
+    Conditional
   }
 }
 </script>
